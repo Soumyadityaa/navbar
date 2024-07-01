@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evSXbIWVMQvKkPT9T2mYnTDF1H+8tlj7VkONjzLUzfiRiI0n7sxhKmzDJu6TvT" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form>
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+          </form>
+    </nav>
+  <section class="profile-card-section container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-4">
+        <div class="profile-card">
+          <img src="profile-picture.jpg" alt="Your Profile Picture" class="profile-image">
+          <div class="profile-info">
+            <h3>Your Name</h3>
+            <p>Your Title/Profession</p>
+            <ul class="social-links list-unstyled d-flex justify-content-center mt-2">
+              <li><a href="#" class="social-link"><i class="bi bi-facebook"></i></a></li>
+              <li><a href="#" class="social-link"><i class="bi bi-twitter"></i></a></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="profile-content container mt-5">
+    <div class="row">
+      <div class="col-md-8">
+        <h2>About Me</h2>
+        <p>Write a brief bio about yourself and your interests.</p>
+        </div>
+    </div>
+  </section>
+
+  <section class="products-section container mt-5">
+    <h2>Products You Might Like</h2>
+    <product-grid></product-grid>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-0evSXbIWVMQvKkPT9T2mYnTDF1H+8tlj7VkONjzLUzfiRiI0n7sxhKmzDJu6TvT" crossorigin="anonymous"></script>
+</body>
+</html>
